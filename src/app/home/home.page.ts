@@ -9,17 +9,13 @@ export class HomePage {
   customText :'yes';
   public ProductTypes: any = [];
   constructor() {
-
     this.ProductTypes = [
-      { expanded: false , Id: 1},
-      { expanded: false , Id: 2},
-      { expanded: false , Id: 3},
-      { expanded: false, Id: 4},
-      { expanded: false, Id: 5 },
-      { expanded: false , Id: 6},
-      { expanded: false , Id: 7},
-      { expanded: false, Id: 8 },
-      { expanded: false , Id: 9}
+      { expanded: false , Id: 1, name: 'Recreational Finishing License'},
+      { expanded: false , Id: 2, name: 'Commerical Fishing Licenses'},
+      { expanded: false , Id: 3, name: 'Hadhra Fishing License'},
+      { expanded: false, Id: 4, name: 'Fishing Net Permit(AI Ghazal)'},
+      { expanded: false, Id: 5, name: 'Bohoor(Sea)Permit' },
+      { expanded: false , Id: 6, name: 'Dufara Fishing Permit'}
     ];
   }
 

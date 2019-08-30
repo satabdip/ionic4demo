@@ -1,75 +1,52 @@
-<ion-header>
+<ion-header class="maincontainer">
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <div>
+        <ion-icon name="arrow-back"></ion-icon>
+ <ion-title class="headertext">   
+     Arabic
+    </ion-title> 
+  </div>
+    <ion-searchbar></ion-searchbar>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
+<ion-content >
   <!-- <div class="ion-padding">
     The world is your oyster.
     <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
   </div> -->
   <ion-list class="product-types">
-
       <ion-list-header>
         <ion-label>Choose a Product Category</ion-label>
-      </ion-list-header>
-  
-      <ion-item (click)="ExpandItem(p)" *ngFor="let p of ProductTypes" margin-bottom>
-  
-        <!-- <img start [src]="this.auth.APIUrl + '' + p.LogoUrl" /> -->
-  
-        <ion-label>
-  
-            <h2>My Neighbor Totoro</h2>
-            <h3>Hayao Miyazaki • 1988</h3>
+      </ion-list-header>  
+      <ion-item (click)="ExpandItem(p)" *ngFor="let p of ProductTypes" margin-bottom>  
+        <ion-label>  
+            <h2>{{p.name}}</h2>           
             <p id="expandWrapper" class="expand-wrapper" [class.collapsed]="!p.expanded">
                Hello people
-            </p>
-  
-        </ion-label>
-  
-      </ion-item>
-  
+            </p>  
+        </ion-label>  
+       
+      </ion-item>  
     </ion-list>
 </ion-content>
 <ion-footer>
-
     <ion-list>
         <ion-item>
-            <ion-label> CONTRAST</ion-label>
-           
+            <ion-label> CONTRAST</ion-label>           
             <ion-toggle ion-toggle-text="online;offline" ng-model="customText">
                 Custom text: <b>{{ customText || false }}</b>
-              </ion-toggle>
-              
-          </ion-item>
-       
+              </ion-toggle>              
+          </ion-item>       
       <ion-item>
-          <ion-label> FOLLOW US</ion-label>
-         
-            <div>
-          
-                <span><ion-icon name="logo-twitter" class=""></ion-icon>
-                     
-                </span>
-              <span><ion-icon name="logo-facebook"></ion-icon>
-                
-                </span>
-              <span><ion-icon name="logo-instagram"></ion-icon>
-                
-                </span>
-              <span><ion-icon name="logo-linkedin"></ion-icon>
-                
-                </span>
-              <span><ion-icon name="logo-youtube"></ion-icon>
-                
-                </span>
+          <ion-label> FOLLOW US</ion-label>         
+            <div>          
+              <span><ion-icon name="logo-twitter" class=""></ion-icon></span>
+              <span><ion-icon name="logo-facebook"></ion-icon></span>
+              <span><ion-icon name="logo-instagram"></ion-icon></span>
+              <span><ion-icon name="logo-linkedin"></ion-icon></span>
+              <span><ion-icon name="logo-youtube"></ion-icon> </span>
             </div>
-        </ion-item>
-      
+        </ion-item>      
         <ion-item>
           <ion-label>Google Translator</ion-label>
           <ion-select value="english" okText="Okay" cancelText="Dismiss">
@@ -78,27 +55,16 @@
             <ion-select-option value="odia">Odia</ion-select-option>
             <ion-select-option value="telugu">Telugu</ion-select-option>
           </ion-select>
-        </ion-item>
-      
-      </ion-list>
-
-        
-        
-            
-       
+        </ion-item>      
+      </ion-list> 
   <ion-toolbar>
     <ion-title style="text-align:center;">
         www.ead.ae
     </ion-title>
-
     <p style="text-align:center;">
         Environment Agency-Abudhabi@2019     </p>
         <p style="text-align:center;">
             Terms and Conditions | Privacy Policy   </p>
          <p style="text-align:center;">Version2.0 Updated on:01 June 2019</p>
-
-
-
- 
-  </ion-toolbar>
+         </ion-toolbar>
 </ion-footer>

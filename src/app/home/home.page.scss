@@ -15,7 +15,12 @@
 //   .collapsed {
 //     height: 0 !important;
 //   }
-
+.maincontainer{
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
   .expand-wrapper {
     transition: max-height 0.4s ease-in-out;
     overflow: hidden;
@@ -25,3 +30,11 @@
   .collapsed {
     max-height: 0 !important;
   }
+  .headertext{
+    float:right;font-size:1em;
+  }
+  .searchbar-cancel-button.sc-ion-searchbar-md, .searchbar-search-icon.sc-ion-searchbar-md{
+    right:16px !important;
+    left:0px !important;
+  }
+  
