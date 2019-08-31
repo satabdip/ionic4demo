@@ -20,21 +20,111 @@
   padding-right:10px;
   padding-top:10px;
   padding-bottom:10px;
+  background:#5DBCD2;
 }
   .expand-wrapper {
     transition: max-height 0.4s ease-in-out;
     overflow: hidden;
     height: auto;
+   // padding-left:10px;
+   // padding-right:10px;
+   // margin-left: -12px;
+    // border-bottom: 1px solid #F0F1F3;
+    // border-top: 1px solid #F0F1F3;
+    display: block;
   }
-  
   .collapsed {
     max-height: 0 !important;
+    display: none;
   }
   .headertext{
-    float:right;font-size:1em;
+    float:right; font-size:1em;
   }
   .searchbar-cancel-button.sc-ion-searchbar-md, .searchbar-search-icon.sc-ion-searchbar-md{
     right:16px !important;
     left:0px !important;
   }
-  
+  .homecards{
+      background: #FFF;
+  }
+  :host {
+    ion-content {
+      --background:none;
+      background-color: #B8C4D2;
+      background-size: cover;
+      background-position: center center;
+    }
+    .searchbar-input.sc-ion-searchbar-md{
+        --background: #B8C4D2 !important;  
+      }
+   .searchbar-search-icon.sc-ion-searchbar-md{
+    right:16px !important;
+   }
+  }
+
+  .arrowIcon{
+      float: right;
+  }
+
+  .imgicon{
+    font-size: 25px;
+    margin-right: 6px;
+    color: #FFF;
+  }
+  .cardbottom{
+    background: #007588;
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .cardmiddle{
+    background: #FFF;
+    margin-left: -17px;
+    margin-right: -17px;
+    text-align: center;
+    padding-bottom:10px;
+  }
+
+  .item-native{
+    background :#007588 !important;
+  }
+  .roundtext{
+    border: 1px solid #6E8D82;
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 50px;
+    color: 	#DC143C;
+  }
+  .roundsmalltext{
+    border: 1px solid #6E8D82;
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 25px;
+    color: 	#638277;  
+    font-size:12px;
+    padding-top:5px;
+  }
+.callicon{
+    position: absolute;
+    font-size: 34px;
+    /* width: 25px; */
+    /* height: 25px; */
+    margin-left: -26%;
+    margin-top: 7px;
+    color: #0e6b4b;
+}
+  .mailicon{
+    position: absolute;
+    font-size: 17px;
+    margin-left: -25.2%;
+    margin-top: 4px;
+    color: #0e6b4b;
+  }
+  .mainheader{
+    background: white;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 30px;
+  }

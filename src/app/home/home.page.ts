@@ -32,8 +32,6 @@ export class HomePage {
         return listItem;
       });
     }
-
-    console.log('item',item);
   }
 
 }
